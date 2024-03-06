@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Casmaq">
+  <main>
+    <Header />
+    <SectionContainer class="pt-32 font-sans">
+      <div class="flex flex-col md:flex-row mx-4">
+        <div class="md:w-2/3">
+          <h1 class="font-bold text-4xl">CASMAQ</h1>
+          <h2 class="font-bold text-2xl">Servicios Industriales</h2>
+          <p class="mt-8 text-pretty">
+            Somos especialistas en la fabricacion, venta y distribucion de
+            pallets. Nuestros productos son de alta calidad y durabilidad.
+          </p>
+
+          <p class="mt-8 text-pretty">
+            A pesar de su pequeño tamaño, Coya tiene una rica cultura y una
+            fuerte sensación de comunidad. Festivales y eventos locales a menudo
+            celebran la herencia minera y cultural del pueblo. La combinación de
+            su historia minera, su arquitectura distintiva y su entorno natural
+            hacen de Coya un lugar interesante y pintoresco para visitar en
+            Chile.
+          </p>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="img/casmaq.png" alt="Imagen de Coya" class="h-20 w-100" />
+        </div>
+      </div>
+    </SectionContainer>
+    <Footer />
+  </main>
+</Layout>
