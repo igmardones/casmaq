@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Casmaq">
+  <main>
+    <Header />
+    <SectionContainer class="pt-10 font-sans">
+      <div class="flex flex-col md:flex-row mx-4">
+        <div class="md:w-3/3">
+          <h1 class="font-bold text-4xl">PRODUCTOS</h1>
+          <h2 class="font-bold text-4xl mt-6">Pallets</h2>
+
+          <p class="mt-8 text-pretty text-xl">
+            Los pallets son una herramienta fundamental en la logística de
+            cualquier empresa. En Casmaq, contamos con una amplia variedad de
+            pallets de madera para satisfacer las necesidades de nuestros
+            clientes.
+          </p>
+        </div>
+      </div>
+    </SectionContainer>
+    <SectionContainer class="pt-10 font-sans">
+      <div class="flex flex-col md:flex-row mx-4 gap-4">
+        <div class="md:w-1/3"></div>
+        <div>
+          <h1 class="text-xl md:text-3xl font-bold pb-2 md:pb-4">
+            Pallet Tipo Estándar
+          </h1>
+          <img src="/img/wallpaper.jpg" alt="" />
+          <p class="text-sm md:text-base mt-2 md:mt-4 mb-2 md:mb-4">
+            Pallet 1000 x 1200 cm.
+          </p>
+          <button
+            class="bg-white hover:bg-emerald-700 text-black font-bold py-2 px-4 rounded"
+          >
+            Cotiza aquí
+          </button>
+        </div>
+        <div>
+          <h1 class="text-xl md:text-3xl font-bold pb-2 md:pb-4">
+            Pallet Tipo Euro
+          </h1>
+          <img src="/img/wallpaper.jpg" alt="" />
+          <p class="text-sm md:text-base mt-2 md:mt-4 mb-2 md:mb-4">
+            Pallet 800 x 1200 cm.
+          </p>
+          <button
+            class="bg-white hover:bg-emerald-700 text-black font-bold py-2 px-4 rounded"
+          >
+            Cotiza aquí
+          </button>
+        </div>
+        <div>
+          <h1 class="text-xl md:text-3xl font-bold pb-2 md:pb-4">
+            Pallet Tipo Yugo
+          </h1>
+          <img src="/img/wallpaper.jpg" alt="" />
+          <p class="text-sm md:text-base mt-2 md:mt-4 mb-2 md:mb-4">
+            Pallet 1000 x 1200 cm.
+          </p>
+          <button
+            class="bg-white hover:bg-emerald-700 text-black font-bold py-2 px-4 rounded"
+          >
+            Cotiza aquí
+          </button>
+        </div>
+      </div>
+    </SectionContainer>
+
+    <Footer />
+  </main>
+</Layout>

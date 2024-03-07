@@ -1,25 +1,70 @@
-<header
+<!-- <header
   class="bg-[#43766C] flex justify-center items-center w-full mx-auto fixed top-0 left-0 right-0 z-50 margin-auto mb-4 font-sans"
 >
-  <img src="/img/coya.webp" alt="Logo" class="size-16 mr-10" />
+  <div class="mr-4">
+    <img src="/img/logo-white.svg" alt="Logo" class="h-16" />
+  </div>
   <nav class="hidden sm:flex flex-row gap-x-10">
     <a
       class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
-      href="/">INICIO</a
+      href="/">Inicio</a
     >
     <a
       class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
-      href="/quienes-somos">QUIENES SOMOS</a
+      href="/quienes-somos">Quienes Somos</a
     >
     <a
       class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
-      href="/galeria">PRODUCTOS</a
+      href="/productos">Productos</a
     >
     <a
       class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
-      href="/contacto">NORMA NIMF15</a
+      href="/norma-ninmf">Norma NIMF15</a
     >
   </nav>
+</header> -->
+<header class="bg-[#43766C]">
+  <div class="container mx-auto flex items-center justify-between py-4 px-8">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="/img/logo-white.svg" alt="Logo" class="h-10 mr-2" />
+    </div>
+
+    <!-- Navegación -->
+    <nav class="hidden sm:flex justify-center space-x-4 flex-grow gap-6">
+      <a
+        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
+        href="/">Inicio</a
+      >
+      <a
+        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
+        href="/quienes-somos">Quienes Somos</a
+      >
+      <a
+        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
+        href="/productos">Productos</a
+      >
+      <a
+        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
+        href="/norma-ninmf">Norma NIMF15</a
+      >
+      <a
+        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
+        href="/contacto">Contacto</a
+      >
+    </nav>
+  </div>
+
+  <!-- Menú desplegable para dispositivos móviles -->
+  <div class="sm:hidden bg-[#43766C]">
+    <div class="px-4 py-2 space-y-2">
+      <a href="#" class="block text-white hover:text-gray-300">Inicio</a>
+      <a href="#" class="block text-white hover:text-gray-300">Quienes Somos</a>
+      <a href="#" class="block text-white hover:text-gray-300">Productos</a>
+      <a href="#" class="block text-white hover:text-gray-300">Norma NINMF15</a>
+      <a href="#" class="block text-white hover:text-gray-300">Contacto</a>
+    </div>
+  </div>
 </header>
 
 <!-- <header
