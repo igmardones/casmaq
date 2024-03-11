@@ -23,9 +23,10 @@
     >
   </nav>
 </header> -->
-<header class="bg-[#43766C]">
+<header class="sticky top-0 z-50 bg-[#43766C]">
   <div class="container mx-auto flex items-center justify-between py-4 px-8">
     <!-- Logo -->
+
     <div class="flex items-center">
       <img src="/img/logo-white.svg" alt="Logo" class="h-10 mr-2" />
     </div>
@@ -33,23 +34,23 @@
     <!-- Navegación -->
     <nav class="hidden sm:flex justify-center space-x-4 flex-grow gap-6">
       <a
-        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
+        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
         href="/">Inicio</a
       >
       <a
-        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
+        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
         href="/quienes-somos">Quienes Somos</a
       >
       <a
-        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
+        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
         href="/productos">Productos</a
       >
       <a
-        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
-        href="/norma-ninmf">Norma NIMF15</a
+        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
+        href="/norma-ninmf15">Norma NIMF15</a
       >
       <a
-        class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
+        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
         href="/contacto">Contacto</a
       >
     </nav>
@@ -58,11 +59,19 @@
   <!-- Menú desplegable para dispositivos móviles -->
   <div class="sm:hidden bg-[#43766C]">
     <div class="px-4 py-2 space-y-2">
-      <a href="#" class="block text-white hover:text-gray-300">Inicio</a>
-      <a href="#" class="block text-white hover:text-gray-300">Quienes Somos</a>
-      <a href="#" class="block text-white hover:text-gray-300">Productos</a>
-      <a href="#" class="block text-white hover:text-gray-300">Norma NINMF15</a>
-      <a href="#" class="block text-white hover:text-gray-300">Contacto</a>
+      <a href="/" class="block text-white hover:text-gray-300">Inicio</a>
+      <a href="/quienes-somos" class="block text-white hover:text-gray-300"
+        >Quienes Somos</a
+      >
+      <a href="/productos" class="block text-white hover:text-gray-300"
+        >Productos</a
+      >
+      <a href="/norma-ninmf15" class="block text-white hover:text-gray-300"
+        >Norma NINMF15</a
+      >
+      <a href="/contacto" class="block text-white hover:text-gray-300"
+        >Contacto</a
+      >
     </div>
   </div>
 </header>

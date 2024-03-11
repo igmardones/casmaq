@@ -8,9 +8,9 @@ import Footer from "../components/Footer.astro";
 <Layout title="Casmaq">
   <main>
     <Header />
-    <SectionContainer class="pt-10 font-sans">
+    <SectionContainer class="font-sans">
       <div class="flex flex-col md:flex-row mx-4">
-        <div class="md:w-3/3">
+        <!-- <div class="md:w-3/3">
           <h1 class="font-bold text-4xl">
             Somos CASMAQ y ofrecemos las mejores soluciones industriales para tu
             empresa.
@@ -30,10 +30,53 @@ import Footer from "../components/Footer.astro";
             inventore, id incidunt consectetur aliquam ea atque pariatur
             nesciunt!
           </p>
-        </div>
+        </div> -->
+
+        <section>
+          <div
+            class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-10"
+          >
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+              <div
+                class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
+              >
+                <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1601002052861-8cd1485edf1f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="absolute inset-0 h-full w-full object-cover shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-125"
+                />
+              </div>
+
+              <div class="lg:py-24">
+                <h2 class="text-3xl font-bold sm:text-4xl">
+                  Soluciones Industriales para tu empresa
+                </h2>
+
+                <p class="mt-4 text-white text-md start">
+                  En Casmaq, ofrecemos una amplia gama de pallets de alta
+                  calidad para satisfacer todas sus necesidades de envío.
+                  Nuestros pallets están hechos de materiales duraderos y están
+                  disponibles en una variedad de tamaños y estilos. También
+                  ofrecemos servicios de personalización para que pueda obtener
+                  los pallets que necesita para su negocio. Contáctenos hoy para
+                  obtener más información sobre nuestros productos y servicios.
+                </p>
+
+                <a
+                  href="#"
+                  class="mt-8 inline-block rounded bg-[#0F3D3E] 0F3D3E px-12 py-3 text-sm font-medium text-white transition hover:bg-[#181D31]
+                   focus:outline-none focus:ring focus:ring-yellow-400"
+                >
+                  Ver productos
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </SectionContainer>
-    <SectionContainer class="pt-10 font-sans">
+
+    <!-- <SectionContainer class="pt-10 font-sans">
       <div class="flex flex-col md:flex-row mx-4">
         <div class="md:w-3/3">
           <h1 class="font-bold text-4xl">
@@ -46,17 +89,179 @@ import Footer from "../components/Footer.astro";
           </p>
 
           <p class="mt-8 text-pretty">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            voluptatum excepturi, velit harum architecto pariatur cupiditate non
-            fuga quasi iusto distinctio magnam esse recusandae, rerum repellat
-            est maxime delectus qui, ab sed! Aliquam laborum iusto eligendi
-            nobis aut repellendus obcaecati error at eum! Culpa perspiciatis
-            inventore, id incidunt consectetur aliquam ea atque pariatur
-            nesciunt!
+            En Casmaq, ofrecemos una amplia gama de pallets de alta calidad para
+            satisfacer todas sus necesidades de envío. Nuestros pallets están
+            hechos de materiales duraderos y están disponibles en una variedad
+            de tamaños y estilos. También ofrecemos servicios de personalización
+            para que pueda obtener los pallets que necesita para su negocio.
+            Contáctenos hoy para obtener más información sobre nuestros
+            productos y servicios.
           </p>
         </div>
       </div>
+    </SectionContainer> -->
+
+    <SectionContainer>
+      <section class="bg-[#219C90] text-white">
+        <div
+          class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-6 lg:py-6 mx-auto flex flex-col items-center"
+        >
+        </div>
+        <h2 class="text-4xl font-bold text-white mb-8 text-center">
+          Ofrecemos
+        </h2>
+        <div
+          class="mt-8 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-10 lg:grid-cols-4 lg:gap-36 justify-center items-center"
+        >
+          <div class="flex flex-col items-center justify-center">
+            <span
+              class="shrink-0 rounded-lg bg-[#183D3D] p-4 flex justify-center items-center size-24 shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-125"
+            >
+              <svg
+                class="size-12"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#ffffff"
+              >
+                <path
+                  d="M13 10V3L5 14H11V21L19 10H13Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+            <h3 class="mt-3 text-center text-white text-xl font-bold">
+              Rapidez
+            </h3>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <span
+              class="shrink-0 rounded-lg bg-[#183D3D] p-4 flex justify-center items-center size-24 shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-125"
+            >
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <svg
+                class="size-12"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#ffffff"
+                ><path
+                  d="M1 20V19C1 15.134 4.13401 12 8 12V12C11.866 12 15 15.134 15 19V20"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"></path><path
+                  d="M13 14V14C13 11.2386 15.2386 9 18 9V9C20.7614 9 23 11.2386 23 14V14.5"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"></path><path
+                  d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M18 9C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3C16.3431 3 15 4.34315 15 6C15 7.65685 16.3431 9 18 9Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path></svg
+              >
+            </span>
+            <h3 class="mt-3 text-center text-white text-xl font-bold">
+              Compromiso
+            </h3>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <span
+              class="shrink-0 rounded-lg bg-[#183D3D] p-4 flex justify-center items-center size-24 shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-125"
+            >
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <svg
+                class="size-12"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#ffffff"
+                ><path
+                  d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path></svg
+              >
+            </span>
+            <h3 class="mt-3 text-center text-white text-xl font-bold">
+              Calidad
+            </h3>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <span
+              class="shrink-0 rounded-lg bg-[#183D3D] p-4 flex justify-center items-center size-24 shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-125"
+            >
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <svg
+                class="size-12"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#ffffff"
+                ><path
+                  d="M7 18H10.5H14"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M7 14H7.5H8"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M7 10H8.5H10"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M7 2L16.5 2L21 6.5V19"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M3 20.5V6.5C3 5.67157 3.67157 5 4.5 5H14.2515C14.4106 5 14.5632 5.06321 14.6757 5.17574L17.8243 8.32426C17.9368 8.43679 18 8.5894 18 8.74853V20.5C18 21.3284 17.3284 22 16.5 22H4.5C3.67157 22 3 21.3284 3 20.5Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M14 5V8.4C14 8.73137 14.2686 9 14.6 9H18"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path></svg
+              >
+            </span>
+            <h3 class="mt-3 text-center text-white text-xl font-bold">
+              NINMF15
+            </h3>
+          </div>
+        </div>
+      </section>
     </SectionContainer>
-    <Footer />
   </main>
+  <Footer />
 </Layout>
