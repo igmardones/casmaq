@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Casmaq">
-  <main>
+  <section>
     <Header />
     <SectionContainer class="font-sans">
       <div class="flex flex-col md:flex-row mx-4">
@@ -64,7 +64,7 @@ import Footer from "../components/Footer.astro";
 
                 <a
                   href="#"
-                  class="mt-8 inline-block rounded bg-[#0F3D3E] 0F3D3E px-12 py-3 text-sm font-medium text-white transition hover:bg-[#181D31]
+                  class="mt-8 inline-block rounded bg-[#0F3D3E] 0F3D3E px-6 py-3 text-sm font-medium text-white transition hover:bg-[#181D31]
                    focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Ver productos
@@ -100,18 +100,19 @@ import Footer from "../components/Footer.astro";
         </div>
       </div>
     </SectionContainer> -->
-
     <SectionContainer>
       <section class="bg-[#219C90] text-white">
         <div
           class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-6 lg:py-6 mx-auto flex flex-col items-center"
         >
         </div>
+        <!-- Resto del código -->
+
         <h2 class="text-4xl font-bold text-white mb-8 text-center">
           Ofrecemos
         </h2>
         <div
-          class="mt-8 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-10 lg:grid-cols-4 lg:gap-36 justify-center items-center"
+          class="mt-8 grid grid-cols-1 gap-4 md:mt-16 md:grid-cols-2 md:gap-6 lg:grid-cols-4 lg:gap-36 justify-center items-center"
         >
           <div class="flex flex-col items-center justify-center">
             <span
@@ -136,6 +137,10 @@ import Footer from "../components/Footer.astro";
             <h3 class="mt-3 text-center text-white text-xl font-bold">
               Rapidez
             </h3>
+            <p class="text-center mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea
+              harum optio.
+            </p>
           </div>
           <div class="flex flex-col items-center justify-center">
             <span
@@ -173,6 +178,10 @@ import Footer from "../components/Footer.astro";
             <h3 class="mt-3 text-center text-white text-xl font-bold">
               Compromiso
             </h3>
+            <p class="text-center mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea
+              harum optio.
+            </p>
           </div>
           <div class="flex flex-col items-center justify-center">
             <span
@@ -209,6 +218,10 @@ import Footer from "../components/Footer.astro";
             <h3 class="mt-3 text-center text-white text-xl font-bold">
               Calidad
             </h3>
+            <p class="text-center mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea
+              harum optio.
+            </p>
           </div>
           <div class="flex flex-col items-center justify-center">
             <span
@@ -258,10 +271,15 @@ import Footer from "../components/Footer.astro";
             <h3 class="mt-3 text-center text-white text-xl font-bold">
               NINMF15
             </h3>
+            <p class="text-center mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea
+              harum optio.
+            </p>
           </div>
         </div>
       </section>
     </SectionContainer>
-  </main>
-  <Footer />
+
+    <Footer />
+  </section>
 </Layout>
