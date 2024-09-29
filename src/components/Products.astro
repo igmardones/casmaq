@@ -1,47 +1,32 @@
 ---
-const PRODUCTS = [
-  {
-    name: "Pallet Tipo Estandar",
-    image: "/img/wallpaper.jpg",
-    description: "Pallet 1000 x 1200 cm.",
-  },
-  {
-    name: "Pallet Tipo Euro",
-    image: "/img/wallpaper.jpg",
-    description: "Pallet 800 x 1200 cm.",
-  },
-  {
-    name: "Pallet Tipo Yugo",
-    image: "/img/wallpaper.jpg",
-    description: "Pallet 1000 x 1200 cm.",
-  },
-  {
-    name: "Bolsa Xtend 2.5 kg",
-    image: "/img/xtend_2_5kg.jpg",
-    description: "Bolsa de 2.5 kg para exportación de frutas y verduras.",
-  },
-  {
-    name: "Bolsa Xtend 5 kg",
-    image: "/img/xtend_5kg.jpg",
-    description: "Bolsa de 5 kg para exportación de frutas y verduras.",
-  },
-];
+import type { Product } from "../types/product.ts";
+
+// Filtrar productos por categoría
+const filteredProducts: Product[] = Astro.props.products;
 ---
 
-{
-  PRODUCTS.map((product) => (
-    <div>
-      <h1 class="text-xl md:text-2xl font-bold pb-2 md:pb-4">{product.name}</h1>
-      <img class="rounded-md shadow-xl" src={product.image} alt="" />
-      <p class="text-sm md:text-base mt-2 md:mt-4 mb-2 md:mb-4">
-        {product.description}
-      </p>
-      <a
-        href="#"
-        class="inline-block rounded bg-[#0F3D3E] 0F3D3E px-4 py-3 text-sm font-medium text-white transition hover:bg-[#181D31]"
-      >
-        Cotiza aquí
-      </a>
-    </div>
-  ))
-}
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {
+    filteredProducts.map((product: Product) => (
+      <div class="bg-teal-700 p-4 shadow-md rounded-lg">
+        <h1 class="text-xl md:text-2xl font-bold pb-2 md:pb-4">
+          {product.name}
+        </h1>
+        <img
+          class="rounded-md shadow-xl"
+          src={product.image}
+          alt={product.name}
+        />
+        <p class="text-sm md:text-base mt-2 md:mt-4 mb-2 md:mb-4">
+          {product.description}
+        </p>
+        <a
+          href="/contacto"
+          class="inline-block rounded bg-[#0F3D3E] px-4 py-3 text-sm font-medium text-white transition hover:bg-teal-900"
+        >
+          Cotiza aquí
+        </a>
+      </div>
+    ))
+  }
+</div>
