@@ -1,64 +1,42 @@
-<!-- <header
-  class="bg-[#43766C] flex justify-center items-center w-full mx-auto fixed top-0 left-0 right-0 z-50 margin-auto mb-4 font-sans"
->
-  <div class="mr-4">
-    <img src="/img/logo-white.svg" alt="Logo" class="h-16" />
-  </div>
-  <nav class="hidden sm:flex flex-row gap-x-10">
-    <a
-      class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
-      href="/">Inicio</a
-    >
-    <a
-      class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
-      href="/quienes-somos">Quienes Somos</a
-    >
-    <a
-      class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
-      href="/productos">Productos</a
-    >
-    <a
-      class="rounded-md p-2 text-white hover:bg-[#578c8c] hover:text-white"
-      href="/norma-ninmf">Norma NIMF15</a
-    >
-  </nav>
-</header> -->
 <header class="sticky top-0 z-50 bg-[#43766C]">
   <div class="container mx-auto flex items-center justify-between py-4 px-8">
     <!-- Logo -->
-
     <div class="flex items-center">
       <img src="/img/casmaq-logo.svg" alt="Logo" class="h-10 mr-2" />
     </div>
 
+    <!-- Ícono de hamburguesa para móviles -->
+    <div class="sm:hidden">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <svg
+          class="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
     <!-- Navegación -->
     <nav class="hidden sm:flex justify-center space-x-4 flex-grow gap-6">
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
-        href="/">Inicio</a
-      >
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
-        href="/quienes-somos">Quienes Somos</a
-      >
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
-        href="/productos">Productos</a
-      >
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
-        href="/norma">Norma NIMF15</a
-      >
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#0F3D3E] hover:text-white hover:scale-105 font-semibold"
-        href="/contacto">Contacto</a
-      >
+      <a class="nav-link" href="/">Inicio</a>
+      <a class="nav-link" href="/quienes-somos">Quienes Somos</a>
+      <a class="nav-link" href="/productos">Productos</a>
+      <a class="nav-link" href="/norma">Norma NIMF15</a>
+      <a class="nav-link" href="/contacto">Contacto</a>
     </nav>
   </div>
 </header>
 
 <!-- Menú desplegable para dispositivos móviles -->
-<div class="sm:hidden bg-[#43766C]">
+<div id="mobile-menu" class="hidden sm:hidden bg-[#43766C]">
   <div class="px-4 py-2 space-y-2">
     <a href="/" class="block text-white hover:text-gray-300">Inicio</a>
     <a href="/quienes-somos" class="block text-white hover:text-gray-300"
@@ -68,44 +46,46 @@
       >Productos</a
     >
     <a href="/norma" class="block text-white hover:text-gray-300"
-      >Norma NINMF15</a
+      >Norma NIMF15</a
     >
     <a href="/contacto" class="block text-white hover:text-gray-300">Contacto</a
     >
   </div>
 </div>
 
-<!-- <header
-  class="bg-[#3A4D39] flex justify-between items-center w-full mx-auto fixed top-0 left-0 right-0 z-50 font-sans"
->
-  <div class="flex-grow flex justify-center mt-4">
-    <a href="#" class="flex items-center space-x-9">
-      <img src="img/coya.webp" class="size-12" alt="Flowbite Logo" />
-      <span
-        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-      ></span>
-    </a>
-    <nav class="hidden sm:flex flex-row gap-x-8 text-lg">
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#739072] hover:text-white"
-        href="#top">Inicio</a
-      >
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#739072] hover:text-white"
-        href="#sobre-coya">Sobre Coya</a
-      >
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#739072] hover:text-white"
-        href="#galeria">Galería</a
-      >
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#739072] hover:text-white"
-        href="#contacto">Contacto</a
-      >
-      <a
-        class="rounded-md p-2 text-white hover:bg-[#739072] hover:text-white"
-        href="#preguntas">Preguntas</a
-      >
-    </nav>
-  </div>
-</header> -->
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
+</script>
+
+<style>
+  .nav-link {
+    position: relative;
+    color: white;
+    font-weight: 600;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: white;
+    transition: width 0.3s;
+    bottom: 0;
+    left: 0;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+</style>
