@@ -3,35 +3,99 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Footer from "../components/Footer.astro";
-import CardAbout from "../components/CardAbout.astro";
 ---
 
 <Layout title="Casmaq">
   <main>
     <Header />
-    <SectionContainer class="pt-10 font-sans">
-      <div class="flex flex-col md:flex-row mx-4">
-        <div class="md:w-3/3">
-          <h1 class="font-bold text-4xl">QUIENES SOMOS</h1>
 
-          <p class="mt-8 text-pretty text-xl">
-            Somos una empresa que ofrece servicios integrales y de calidad para
-            optimizar la exportación de frutas y otros productos, brindando
-            rapidez, eficiencia y productos de alta calidad como pallets, mantas
-            térmicas, maquinaria y cajas resistentes para satisfacer las
-            necesidades de los clientes y contribuir a su éxito en las
+    <!-- Sección: Quienes Somos -->
+    <SectionContainer class="pt-12 pb-16 font-sans">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-4"
+      >
+        <!-- Texto Quienes Somos -->
+        <div class="flex flex-col justify-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+            ¿Quiénes Somos?
+          </h1>
+          <p class="text-base md:text-lg text-white leading-relaxed">
+            Somos una empresa especializada en ofrecer servicios integrales y de
+            calidad para optimizar la exportación de frutas y otros productos.
+            Nos destacamos por nuestra rapidez, eficiencia y productos de alta
+            durabilidad como pallets, mantas térmicas, maquinaria y cajas
+            resistentes. Contribuimos al éxito de nuestros clientes en todas sus
             operaciones.
           </p>
+        </div>
+        <!-- Imagen Representativa -->
+        <div class="flex justify-center">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1682129210416-53fabe5b08da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Equipo de trabajo"
+            class="rounded-lg shadow-md max-w-full h-auto"
+          />
         </div>
       </div>
     </SectionContainer>
 
-    <SectionContainer class="pt-10 font-sans">
-      <div class="flex flex-col md:flex-row mx-4 my-4 gap-4 rounded-md">
-        <div class="md:w-3/3"></div>
-        <CardAbout />
+    <section class="bg-gray-200 py-12 px-4 font-sans">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Texto Visión a la derecha en pantallas grandes -->
+        <div class="flex flex-col justify-center">
+          <h1 class="text-3xl md:text-4xl font-bold text-teal-900 mb-6">
+            Nuestra Visión
+          </h1>
+          <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+            Nos visualizamos como el socio estratégico preferido en la
+            exportación de frutas, siendo reconocidos por la excelencia en
+            nuestro servicio al cliente e innovación tecnológica. Nuestro
+            objetivo es expandirnos a nivel nacional, estableciendo relaciones
+            duraderas con nuestros clientes y colaboradores.
+          </p>
+        </div>
+
+        <!-- Imagen Representativa (aparece abajo en pantallas pequeñas, pero primero en grandes) -->
+        <div class="flex justify-center mb-8 md:mb-0 order-last md:order-first">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1682129192250-5bc3a7684814?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Expansión y Visión de Futuro"
+            class="rounded-lg shadow-md max-w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Misión -->
+    <SectionContainer class="pt-12 pb-16 font-sans">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-4"
+      >
+        <!-- Texto Misión -->
+        <div class="flex flex-col justify-center">
+          <h1 class="text-3xl md:text-4xl font-bold text-white mb-6">
+            Nuestra Misión
+          </h1>
+          <p class="text-base md:text-lg text-white leading-relaxed">
+            Nos dedicamos a liderar la industria frutícola con soluciones de
+            alta calidad para la exportación. Nuestra misión es garantizar la
+            rapidez y eficiencia en la entrega de productos como pallets
+            duraderos, adhesivos confiables y cajas resistentes. Buscamos apoyar
+            a nuestros clientes para que logren el éxito en sus operaciones de
+            exportación.
+          </p>
+        </div>
+        <!-- Imagen Representativa -->
+        <div class="flex justify-center">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1663011674087-f35921a8b950?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Exportación de Frutas"
+            class="rounded-lg shadow-md max-w-full h-auto"
+          />
+        </div>
       </div>
     </SectionContainer>
+
     <Footer />
   </main>
 </Layout>

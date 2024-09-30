@@ -11,35 +11,13 @@ import ButtonShowProducts from "../components/ButtonShowProducts.astro";
     <Header />
     <SectionContainer class="font-sans">
       <div class="flex flex-col md:flex-row mx-4">
-        <!-- <div class="md:w-3/3">
-          <h1 class="font-bold text-4xl">
-            Somos CASMAQ y ofrecemos las mejores soluciones industriales para tu
-            empresa.
-          </h1>
-
-          <p class="mt-8 text-pretty text-2xl">
-            Somos especialistas en la fabricacion, venta y distribucion de
-            pallets. Nuestros productos son de alta calidad y durabilidad.
-          </p>
-
-          <p class="mt-8 text-pretty">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            voluptatum excepturi, velit harum architecto pariatur cupiditate non
-            fuga quasi iusto distinctio magnam esse recusandae, rerum repellat
-            est maxime delectus qui, ab sed! Aliquam laborum iusto eligendi
-            nobis aut repellendus obcaecati error at eum! Culpa perspiciatis
-            inventore, id incidunt consectetur aliquam ea atque pariatur
-            nesciunt!
-          </p>
-        </div> -->
-
         <section>
           <div
             class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-10"
           >
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
               <div
-                class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
+                class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full order-last md:order-first"
               >
                 <img
                   alt=""
@@ -49,9 +27,11 @@ import ButtonShowProducts from "../components/ButtonShowProducts.astro";
               </div>
 
               <div class="lg:py-24">
-                <h2 class="text-3xl font-bold sm:text-4xl">
-                  Soluciones Industriales para tu empresa
-                </h2>
+                <h1
+                  class="text-4xl md:text-4xl font-bold text-white mb-6 md:mb-0"
+                >
+                  Soluciones industriales para tu empresa
+                </h1>
 
                 <p class="mt-4 text-white text-md start">
                   En Casmaq, ofrecemos una amplia gama de pallets de alta
@@ -70,32 +50,8 @@ import ButtonShowProducts from "../components/ButtonShowProducts.astro";
       </div>
     </SectionContainer>
 
-    <!-- <SectionContainer class="pt-10 font-sans">
-      <div class="flex flex-col md:flex-row mx-4">
-        <div class="md:w-3/3">
-          <h1 class="font-bold text-4xl">
-            Somos CASMAQ y estamos para apoyarte!
-          </h1>
-
-          <p class="mt-8 text-pretty text-2xl">
-            Somos especialistas en la fabricacion, venta y distribucion de
-            pallets. Nuestros productos son de alta calidad y durabilidad.
-          </p>
-
-          <p class="mt-8 text-pretty">
-            En Casmaq, ofrecemos una amplia gama de pallets de alta calidad para
-            satisfacer todas sus necesidades de envío. Nuestros pallets están
-            hechos de materiales duraderos y están disponibles en una variedad
-            de tamaños y estilos. También ofrecemos servicios de personalización
-            para que pueda obtener los pallets que necesita para su negocio.
-            Contáctenos hoy para obtener más información sobre nuestros
-            productos y servicios.
-          </p>
-        </div>
-      </div>
-    </SectionContainer> -->
     <SectionContainer>
-      <section class="bg-[#219C90] text-white">
+      <section class="bg-teal-600 text-white">
         <div
           class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-6 lg:py-6 mx-auto flex flex-col items-center"
         >
@@ -106,7 +62,7 @@ import ButtonShowProducts from "../components/ButtonShowProducts.astro";
           Ofrecemos
         </h2>
         <div
-          class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 justify-center items-stretch"
+          class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 justify-center items-stretch px-4"
         >
           <div
             class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"

@@ -5,15 +5,15 @@ import type { Product } from "../types/product.ts";
 const filteredProducts: Product[] = Astro.props.products;
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
   {
     filteredProducts.map((product: Product) => (
-      <div class="bg-teal-700 p-4 shadow-md rounded-lg">
+      <div class="bg-teal-700 p-4 shadow-md rounded-lg ">
         <h1 class="text-xl md:text-2xl font-bold pb-2 md:pb-4">
           {product.name}
         </h1>
         <img
-          class="rounded-md shadow-xl"
+          class="rounded-md shadow-xl "
           src={product.image}
           alt={product.name}
         />
