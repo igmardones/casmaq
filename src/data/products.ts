@@ -32,13 +32,13 @@ export const PRODUCTS = [
     },
     {
       name: "Bolsa 2.5 kg",
-      image: "/img/xtend_2_5kg.jpg",
+      image: "/img/bolsa.jpg",
       description: "Bolsa de 2.5 kg para exportación de frutas y verduras.",
       category: "Bolsa",
     },
     {
       name: "Bolsa 5 kg",
-      image: "/img/xtend_5kg.jpg",
+      image: "/img/bolsa.jpg",
       description: "Bolsa de 5 kg para exportación de frutas y verduras.",
       category: "Bolsa",
     },
