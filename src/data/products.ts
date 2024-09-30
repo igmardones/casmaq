@@ -42,5 +42,12 @@ export const PRODUCTS = [
       description: "Bolsa de 5 kg para exportación de frutas y verduras.",
       category: "Bolsa",
     },
+    {
+      name: "Parrilla",
+      image: "/img/parrilla.jpg",
+      description: "Standard 800 x 1200 cm / 1000 x 1200 cm.",
+      category: "Parrilla",
+    },
+
   ];
   

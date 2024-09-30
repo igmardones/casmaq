@@ -11,6 +11,7 @@ import { PRODUCTS } from "../data/products.ts";
 // Filtrar productos por categoría
 const pallets = PRODUCTS.filter((product) => product.category === "Pallet");
 const bolsas = PRODUCTS.filter((product) => product.category === "Bolsa");
+const parrillas = PRODUCTS.filter((product) => product.category === "Parrilla");
 ---
 
 <Layout title="Casmaq">
@@ -54,6 +55,27 @@ const bolsas = PRODUCTS.filter((product) => product.category === "Bolsa");
 
     <SectionContainer class="pt-10 font-sans">
       <Products products={bolsas} />
+    </SectionContainer>
+
+    <!-- Sección para las Bolsas -->
+    <SectionContainer class="pt-10 font-sans">
+      <div class="flex flex-col md:flex-row mx-4">
+        <div class="md:w-3/3">
+          <h2 class="font-bold text-4xl mt-6">Parrillas</h2>
+          <p class="mt-8 text-pretty text-xl">
+            Estas son armadas en 2 formatos y medidas, en madera listón y
+            terciado. Son usadas principalmente para afirmar la carga, y además
+            para protegerla durante el transporte.
+            <br />
+            <p class="mt-8 text-pretty text-xl">Medidas Standard</p>
+            <li>Parrillas : 800 x 1200 mm 1000 x 1200 mm</li>
+          </p>
+        </div>
+      </div>
+    </SectionContainer>
+
+    <SectionContainer class="pt-10 font-sans">
+      <Products products={parrillas} />
     </SectionContainer>
 
     <Footer />

@@ -31,11 +31,23 @@ import Footer from "../components/Footer.astro";
           <div
             class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
           >
-            <img
-              alt=""
-              src="/public/img/normaninmf15.jpg"
-              class="absolute inset-0 h-full w-full object-cover shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-125"
-            />
+            <a
+              href="https://openknowledge.fao.org/server/api/core/bitstreams/4abe51d1-bc23-4905-a06a-77e5091b1295/content"
+              target="_blank"
+              class="group"
+            >
+              <img
+                alt=""
+                src="/public/img/normaninmf15.jpg"
+                class="absolute inset-0 h-full w-full object-cover shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-125"
+              />
+              <!-- Texto que aparece al hacer hover -->
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <span class="text-white text-xl font-semibold">Ver PDF</span>
+              </div>
+            </a>
           </div>
 
           <div class="lg:py-24">
@@ -44,7 +56,7 @@ import Footer from "../components/Footer.astro";
               exportación.
             </h2>
 
-            <p class="mt-8 text-white text-md start text-pretty text-xl">
+            <p class="mt-8 text-white start text-pretty text-xl">
               En CASMAQ SPA, nos comprometemos con la seguridad y confianza en
               el tratamiento de pallets para exportación, cumpliendo con las más
               altas exigencias internacionales. Nuestro equipo de profesionales
@@ -56,31 +68,120 @@ import Footer from "../components/Footer.astro";
         </div>
       </div>
     </SectionContainer>
-    <SectionContainer class="pt-10 pb-10 font-sans">
-      <div class="flex flex-col md:flex-row mx-4">
-        <div class="md:w-3/3">
-          <h1 class="font-bold text-4xl">TE GARANTIZAMOS</h1>
-          <ul class="list-disc mt-8 text-pretty text-xl">
-            <li class="mt-4">
-              <span class="font-bold">Embalaje seguro y libre de plagas:</span>
-              Tus productos estarán protegidos durante el transporte internacional,
-              minimizando el riesgo de introducción y dispersión de plagas cuarentenarias.
-            </li>
-            <li class="mt-4">
-              <span class="font-bold"
-                >Cumplimiento de las normas internacionales:
-              </span> Te brindamos la tranquilidad de que tus pallets cumplen con
-              todas las exigencias fitosanitarias para la exportación.
-            </li>
-            <li class="mt-4">
-              <span class="font-bold">Atención personalizada:</span> Te ofrecemos
-              un servicio integral y personalizado, asesorándote en todo momento
-              para que tu experiencia sea óptima.
-            </li>
-          </ul>
+
+    <SectionContainer>
+      <section class="bg-[#219C90] text-white">
+        <div
+          class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-6 lg:py-6 mx-auto flex flex-col items-center"
+        >
         </div>
-      </div>
+        <!-- Resto del código -->
+
+        <h2 class="text-4xl font-bold text-white mb-8 text-center">
+          Garantizamos
+        </h2>
+        <div
+          class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3 lg:gap-12 justify-center items-stretch"
+        >
+          <div
+            class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          >
+            <span class="shrink-0 p-4 flex justify-center items-center size-24">
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <svg
+                class="size-12"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#ffffff"
+                ><path
+                  d="M8.5 11.5L11.5 14.5L16.5 9.5"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M5 18L3.13036 4.91253C3.05646 4.39524 3.39389 3.91247 3.90398 3.79912L11.5661 2.09641C11.8519 2.03291 12.1481 2.03291 12.4339 2.09641L20.096 3.79912C20.6061 3.91247 20.9435 4.39524 20.8696 4.91252L19 18C18.9293 18.495 18.5 21.5 12 21.5C5.5 21.5 5.07071 18.495 5 18Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path></svg
+              >
+            </span>
+            <h3 class="mt-3 text-xl font-bold">Seguridad</h3>
+            <p class="mt-4 px-2">
+              Tus productos estarán protegidos con un embalaje seguro y libre de
+              plagas durante el transporte internacional, minimizando el riesgo
+              de introducción y dispersión de plagas cuarentenarias.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          >
+            <span class="shrink-0 p-4 flex justify-center items-center size-24">
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <svg
+                class="size-12"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#ffffff"
+                ><path
+                  d="M11.6065 2.34184C11.8322 2.14578 12.1678 2.14578 12.3935 2.34184L14.3418 4.03445C14.4646 4.14111 14.6254 4.19336 14.7874 4.17924L17.3586 3.9551C17.6564 3.92913 17.9279 4.1264 17.9953 4.41768L18.5766 6.93224C18.6133 7.09069 18.7126 7.22748 18.852 7.31129L21.0639 8.64123C21.3201 8.79529 21.4238 9.11447 21.307 9.3897L20.2994 11.7657C20.2359 11.9155 20.2359 12.0845 20.2994 12.2343L21.307 14.6103C21.4238 14.8855 21.3201 15.2047 21.0639 15.3588L18.852 16.6887C18.7126 16.7725 18.6133 16.9093 18.5766 17.0678L17.9953 19.5823C17.9279 19.8736 17.6564 20.0709 17.3586 20.0449L14.7874 19.8208C14.6254 19.8066 14.4646 19.8589 14.3418 19.9655L12.3935 21.6582C12.1678 21.8542 11.8322 21.8542 11.6065 21.6582L9.65816 19.9655C9.53539 19.8589 9.37458 19.8066 9.21256 19.8208L6.64142 20.0449C6.34359 20.0709 6.07208 19.8736 6.00474 19.5823L5.42338 17.0678C5.38675 16.9093 5.28736 16.7725 5.14798 16.6887L2.93615 15.3588C2.67993 15.2047 2.57622 14.8855 2.69295 14.6103L3.70065 12.2343C3.76414 12.0845 3.76414 11.9155 3.70065 11.7657L2.69295 9.3897C2.57622 9.11447 2.67993 8.79529 2.93615 8.64123L5.14798 7.31129C5.28736 7.22748 5.38675 7.09069 5.42338 6.93224L6.00474 4.41768C6.07208 4.1264 6.34359 3.92913 6.64142 3.9551L9.21256 4.17924C9.37458 4.19336 9.53539 4.14111 9.65816 4.03445L11.6065 2.34184Z"
+                  stroke="#ffffff"
+                  stroke-width="2"></path><path
+                  d="M9 13L11 15L16 10"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path></svg
+              >
+            </span>
+            <h3 class="mt-3 text-xl font-bold">Conformidad</h3>
+            <p class="mt-4 px-2">
+              Te brindamos la tranquilidad de que tus pallets cumplen con todas
+              las exigencias fitosanitarias para la exportación, cumpliendo con
+              las normas internacionales.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          >
+            <span class="shrink-0 p-4 flex justify-center items-center size-24">
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <svg
+                class="size-12"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#ffffff"
+                ><path
+                  d="M8 12L11 15L16 10"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path><path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.8214 2.48697 15.5291 3.33782 17L2.5 21.5L7 20.6622C8.47087 21.513 10.1786 22 12 22Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path></svg
+              >
+            </span>
+            <h3 class="mt-3 text-xl font-bold">Asesoría</h3>
+            <p class="mt-4 px-2">
+              Te ofrecemos un servicio integral y personalizado, brindándote
+              asesoría en cada etapa para asegurar que tu experiencia sea
+              excepcional. Nos adaptamos a tus necesidades.
+            </p>
+          </div>
+        </div>
+      </section>
     </SectionContainer>
+
     <Footer />
   </main>
 </Layout>
