@@ -11,117 +11,140 @@ import Rayo from "../components/icons/Rayo.astro";
 ---
 
 <Layout title="Casmaq">
-  <section>
-    <Header />
-    <SectionContainer class="font-sans">
-      <div class="flex flex-col md:flex-row mx-4">
-        <section>
-          <div
-            class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-10"
-          >
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-              <div
-                class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full order-last md:order-first"
-              >
-                <img
-                  alt=""
-                  src="https://images.unsplash.com/photo-1601002052861-8cd1485edf1f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="absolute inset-0 h-full w-full object-cover shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-125"
-                />
-              </div>
-
-              <div class="lg:py-24">
-                <h1
-                  class="text-4xl md:text-4xl font-bold text-white mb-6 md:mb-0"
-                >
-                  Soluciones industriales para tu empresa
-                </h1>
-
-                <p class="mt-4 text-white text-md start">
-                  En Casmaq, ofrecemos una amplia gama de pallets de alta
-                  calidad para satisfacer todas sus necesidades de envío.
-                  Nuestros pallets están hechos de materiales duraderos y están
-                  disponibles en una variedad de tamaños y estilos. También
-                  ofrecemos servicios de personalización para que pueda obtener
-                  los pallets que necesita para su negocio. Contáctenos hoy para
-                  obtener más información sobre nuestros productos y servicios.
-                </p>
-                <ButtonShowProducts />
-              </div>
+  <Header />
+  <SectionContainer class="font-sans">
+    <div class="flex flex-col md:flex-row mx-4">
+      <section>
+        <div
+          class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-10"
+        >
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div
+              class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full order-last md:order-first"
+            >
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1601002052861-8cd1485edf1f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="absolute inset-0 h-full w-full object-cover shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-125"
+              />
             </div>
-          </div>
-        </section>
-      </div>
-    </SectionContainer>
 
-    <SectionContainer>
-      <section class="bg-teal-600 text-white">
-        <div
-          class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-6 lg:py-6 mx-auto flex flex-col items-center"
-        >
-        </div>
-        <!-- Resto del código -->
+            <div class="lg:py-24">
+              <h1
+                class="text-4xl md:text-4xl font-bold text-white mb-6 md:mb-0"
+              >
+                Soluciones industriales para tu empresa
+              </h1>
 
-        <h2 class="text-4xl font-bold text-white mb-8 text-center">
-          Ofrecemos
-        </h2>
-        <div
-          class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 justify-center items-stretch px-4"
-        >
-          <div
-            class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-          >
-            <span class="shrink-0 p-4 flex justify-center items-center size-24">
-              <Rayo />
-            </span>
-            <h3 class="mt-3 text-xl font-bold">Rapidez</h3>
-            <p class="mt-4 px-2">
-              Nos destacamos por ofrecer una alta eficiencia y rapidez en la
-              entrega de todos nuestros productos, garantizando así el éxito en
-              las operaciones de nuestros clientes.
-            </p>
-          </div>
-          <div
-            class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-          >
-            <span class="shrink-0 p-4 flex justify-center items-center size-24">
-              <Users />
-            </span>
-            <h3 class="mt-3 text-xl font-bold">Compromiso</h3>
-            <p class="mt-4 px-2">
-              Nuestra principal prioridad es nuestro cliente y satisfacer sus
-              requerimientos para la ejecución de sus operaciones.
-            </p>
-          </div>
-          <div
-            class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-          >
-            <span class="shrink-0 p-4 flex justify-center items-center size-24">
-              <Calidad />
-            </span>
-            <h3 class="mt-3 text-xl font-bold">Ética</h3>
-            <p class="mt-4 px-2">
-              Trabajamos arduamente cada día, fundamentados en la confianza, la
-              ética y la transparencia hacia todos nuestros clientes.
-            </p>
-          </div>
-          <div
-            class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-          >
-            <span class="shrink-0 p-4 flex justify-center items-center size-24">
-              <Stars />
-            </span>
-            <h3 class="mt-3 text-xl font-bold">Calidad</h3>
-            <p class="mt-4 px-2">
-              La calidad de nuestros productos es excepcional, cumpliendo con
-              altos estándares normativos para garantizar la satisfacción de
-              nuestros clientes.
-            </p>
+              <p class="mt-4 text-white text-md start">
+                En Casmaq, ofrecemos una amplia gama de pallets de alta calidad
+                para satisfacer todas sus necesidades de envío. Nuestros pallets
+                están hechos de materiales duraderos y están disponibles en una
+                variedad de tamaños y estilos. También ofrecemos servicios de
+                personalización para que pueda obtener los pallets que necesita
+                para su negocio. Contáctenos hoy para obtener más información
+                sobre nuestros productos y servicios.
+              </p>
+              <ButtonShowProducts />
+            </div>
           </div>
         </div>
       </section>
-    </SectionContainer>
+    </div>
+  </SectionContainer>
 
-    <Footer />
+  <section class="bg-teal-600 text-white py-4">
+    <div
+      class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-6 lg:py-6 mx-auto flex flex-col items-center"
+    >
+      <h2 class="text-4xl font-bold text-white mb-4 text-center">Ofrecemos</h2>
+      <div
+        class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 justify-center items-stretch"
+      >
+        <div
+          class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+        >
+          <span class="shrink-0 p-4 flex justify-center items-center size-24">
+            <Rayo />
+          </span>
+          <h3 class="mt-3 text-xl font-bold">Rapidez</h3>
+          <p class="mt-4 px-2">
+            Nos destacamos por ofrecer una alta eficiencia y rapidez en la
+            entrega de todos nuestros productos, garantizando así el éxito en
+            las operaciones de nuestros clientes.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+        >
+          <span class="shrink-0 p-4 flex justify-center items-center size-24">
+            <Users />
+          </span>
+          <h3 class="mt-3 text-xl font-bold">Compromiso</h3>
+          <p class="mt-4 px-2">
+            Nuestra principal prioridad es nuestro cliente y satisfacer sus
+            requerimientos para la ejecución de sus operaciones.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+        >
+          <span class="shrink-0 p-4 flex justify-center items-center size-24">
+            <Calidad />
+          </span>
+          <h3 class="mt-3 text-xl font-bold">Ética</h3>
+          <p class="mt-4 px-2">
+            Trabajamos arduamente cada día, fundamentados en la confianza, la
+            ética y la transparencia hacia todos nuestros clientes.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center text-center p-4 bg-[#183D3D] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+        >
+          <span class="shrink-0 p-4 flex justify-center items-center size-24">
+            <Stars />
+          </span>
+          <h3 class="mt-3 text-xl font-bold">Calidad</h3>
+          <p class="mt-4 px-2">
+            La calidad de nuestros productos es excepcional, cumpliendo con
+            altos estándares normativos para garantizar la satisfacción de
+            nuestros clientes.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <SectionContainer>
+    <section class="bg-white py-4 rounded-lg shadow-2xl mt-10 mx-4">
+      <div
+        class="max-w-screen-xl flex flex-col md:flex-row items-center justify-between px-4 mx-4"
+      >
+        <!-- Logo o Icono -->
+        <img
+          src="/img/trato.jpg"
+          alt="Logo"
+          class="rounded-full w-24 h-24 shadow-lg md:mr-4"
+        />
+        <!-- Texto -->
+        <h2
+          class="text-2xl md:text-3xl font-bold text-teal-900 text-center md:text-left"
+        >
+          ¿Necesitas cotizar alguno de nuestros productos?
+        </h2>
+        <!-- Botón -->
+        <div class="mt-6 md:mt-0">
+          <a href="/contacto">
+            <button
+              class="bg-teal-600 text-white font-semibold py-2 px-4 rounded shadow hover:bg-teal-700 transition hover:scale-105"
+            >
+              Contáctanos
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </SectionContainer>
+
+  <Footer />
 </Layout>
