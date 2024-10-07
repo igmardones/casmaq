@@ -9,7 +9,7 @@ const filteredProducts: Product[] = Astro.props.products;
   {
     filteredProducts.map((product: Product) => (
       <div class="bg-teal-700 p-4 shadow-md rounded-lg ">
-        <h1 class="text-xl md:text-2xl font-bold pb-2 md:pb-4">
+        <h1 class="text-xl md:text-xl font-bold pb-2 md:pb-4">
           {product.name}
         </h1>
         <img
