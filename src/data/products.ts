@@ -2,31 +2,31 @@
 export const PRODUCTS = [
     {
       name: "Pallet Tipo Estandar",
-      image: "/img/wallpaper.jpg",
+      image: "/img/p_estandar.jpg",
       description: "Pallet 1000 x 1200 cm.",
       category: "Pallet",
     },
     {
       name: "Pallet Tipo Euro",
-      image: "/img/wallpaper.jpg",
+      image: "/img/p_euro.jpg",
       description: "Pallet 800 x 1200 cm.",
       category: "Pallet",
     },
     {
       name: "Pallet Tipo Yugo",
-      image: "/img/wallpaper.jpg",
+      image: "/img/p_yugo.jpg",
       description: "Pallet 1000 x 1200 cm.",
       category: "Pallet",
     },
     {
       name: "Pallet Personalizado",
-      image: "/img/wallpaper.jpg",
+      image: "/img/p_personalizado.jpg",
       description: "????????????",
       category: "Pallet",
     },
     {
       name: "Pallet Materialero",
-      image: "/img/wallpaper.jpg",
+      image: "/img/p_materialero.jpg",
       description: "Pallet 1000 x 1200 cm.",
       category: "Pallet",
     },
