@@ -1,8 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import Footer from "../components/Footer.astro";
 import Products from "../components/Products.astro";
 
 // Datos de los productos
@@ -16,8 +14,6 @@ const parrillas = PRODUCTS.filter((product) => product.category === "Parrilla");
 
 <Layout title="Casmaq">
   <main>
-    <Header />
-
     <!-- Sección para los Pallets -->
     <SectionContainer class="pt-10 font-sans">
       <div class="flex flex-col md:flex-row mx-4">
@@ -77,7 +73,5 @@ const parrillas = PRODUCTS.filter((product) => product.category === "Parrilla");
     <SectionContainer class="pt-10 font-sans">
       <Products products={parrillas} />
     </SectionContainer>
-
-    <Footer />
   </main>
 </Layout>

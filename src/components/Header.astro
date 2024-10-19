@@ -1,36 +1,42 @@
-<header class="sticky top-0 z-50 bg-[#43766C] font-sans">
-  <nav class="container mx-auto flex items-center justify-between py-4 px-8">
+<header class="sticky top-0 z-50 bg-[#43766C] py-4 sm:py-4 text-white">
+  <nav
+    class="max-w-7xl mx-auto px-5 flex flex-wrap items-center justify-between"
+  >
     <!-- Logo -->
     <a href="/" class="flex items-center">
-      <img src="/img/logo-oficial2-blanco.svg" alt="Logo" class="h-12 mr-2" />
+      <img
+        class="w-52 sm:w-18 sm:h-18"
+        src="/img/logo-oficial2-blanco.svg"
+        alt="Ignacio Mardones"
+      />
     </a>
 
     <!-- Menú de Navegación -->
-    <div class="hidden sm:flex space-x-6">
+    <div class="hidden md:flex space-x-6">
       <a
-        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
+        class="py-1 font-secondary text-md font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
         href="/">Inicio</a
       >
       <a
-        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
+        class="py-1 font-secondary text-md font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
         href="/quienes-somos">Quienes Somos</a
       >
       <a
-        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
+        class="py-1 font-secondary text-md font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
         href="/productos">Productos</a
       >
       <a
-        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
-        href="/norma">Normativa NIMF15</a
+        class="py-1 font-secondary text-md font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
+        href="/norma">Norma</a
       >
       <a
-        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
+        class="py-1 font-secondary text-md font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
         href="/contacto">Contacto</a
       >
     </div>
 
-    <!-- Ícono de menú para móviles -->
-    <div class="sm:hidden">
+    <!-- Menú Responsivo (Opcional) -->
+    <div class="md:hidden">
       <button id="menu-button" class="text-white focus:outline-none">
         <!-- Icono de menú (hamburguesa) -->
         <svg
@@ -49,39 +55,41 @@
     </div>
   </nav>
 
-  <!-- Menú desplegable para dispositivos móviles -->
-  <div id="mobile-menu" class="hidden sm:hidden bg-[#43766C] text-center">
+  <!-- Menú desplegable para dispositivos móviles (Opcional) -->
+  <div id="mobile-menu" class="hidden md:hidden text-center">
     <a
-      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
       href="/">Inicio</a
     >
     <a
-      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
-      href="/quienes-somos">Quienes Somos</a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
+      href="/quienes-somos">Quienes somos</a
     >
     <a
-      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
-      href="/productos">Productos</a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
+      href="/productos">Experiencia</a
     >
     <a
-      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
-      href="/norma">Normativa NIMF15</a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
+      href="/norma">Habilidades</a
     >
     <a
-      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
-      href="/contacto">Contacto</a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-sky-400 uppercase transition-colors duration-300"
+      href="/contacto">Proyectos</a
     >
   </div>
 </header>
 
-<!-- Script para manejar el menú móvil -->
+<!-- Script para manejar el menú móvil (Opcional) -->
 <script>
-  const menuButton = document.getElementById("menu-button");
-  const mobileMenu = document.getElementById("mobile-menu");
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.getElementById("menu-button") as Element;
+    const mobileMenu = document.getElementById("mobile-menu") as Element;
 
-  if (menuButton && mobileMenu) {
-    menuButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  }
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  });
 </script>
