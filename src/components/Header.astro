@@ -1,93 +1,87 @@
-<header class="sticky top-0 z-50 bg-[#43766C]">
-  <div class="container mx-auto flex items-center justify-between py-4 px-8">
+<header class="sticky top-0 z-50 bg-[#43766C] font-sans">
+  <nav class="container mx-auto flex items-center justify-between py-4 px-8">
     <!-- Logo -->
-    <div class="flex items-center">
-      <a href="/">
-        <img src="/img/logo-oficial2-blanco.svg" alt="Logo" class="h-12 mr-2" />
-      </a>
+    <a href="/" class="flex items-center">
+      <img src="/img/logo-oficial2-blanco.svg" alt="Logo" class="h-12 mr-2" />
+    </a>
+
+    <!-- Menú de Navegación -->
+    <div class="hidden sm:flex space-x-6">
+      <a
+        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
+        href="/">Inicio</a
+      >
+      <a
+        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
+        href="/quienes-somos">Quienes Somos</a
+      >
+      <a
+        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
+        href="/productos">Productos</a
+      >
+      <a
+        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
+        href="/norma">Normativa NIMF15</a
+      >
+      <a
+        class="py-1 text-white font-semibold hover:text-gray-300 transition-colors duration-300"
+        href="/contacto">Contacto</a
+      >
     </div>
 
-    <!-- Ícono de hamburguesa para móviles -->
+    <!-- Ícono de menú para móviles -->
     <div class="sm:hidden">
-      <button id="menu-btn" class="text-white focus:outline-none">
+      <button id="menu-button" class="text-white focus:outline-none">
+        <!-- Icono de menú (hamburguesa) -->
         <svg
-          class="w-8 h-8"
+          class="w-6 h-6"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"></path>
+            d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
+  </nav>
 
-    <!-- Navegación -->
-    <nav class="hidden sm:flex justify-center space-x-4 flex-grow gap-6">
-      <a class="nav-link" href="/">Inicio</a>
-      <a class="nav-link" href="/quienes-somos">Quienes Somos</a>
-      <a class="nav-link" href="/productos">Productos</a>
-      <a class="nav-link" href="/norma">Normativa NIMF15</a>
-      <a class="nav-link" href="/contacto">Contacto</a>
-    </nav>
+  <!-- Menú desplegable para dispositivos móviles -->
+  <div id="mobile-menu" class="hidden sm:hidden bg-[#43766C] text-center">
+    <a
+      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
+      href="/">Inicio</a
+    >
+    <a
+      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
+      href="/quienes-somos">Quienes Somos</a
+    >
+    <a
+      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
+      href="/productos">Productos</a
+    >
+    <a
+      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
+      href="/norma">Normativa NIMF15</a
+    >
+    <a
+      class="block px-4 py-2 text-white hover:text-gray-300 transition-colors duration-300"
+      href="/contacto">Contacto</a
+    >
   </div>
 </header>
 
-<!-- Menú desplegable para dispositivos móviles -->
-<div id="mobile-menu" class="hidden sm:hidden bg-[#43766C]">
-  <div class="px-4 py-2 space-y-2">
-    <a href="/" class="block text-white hover:text-gray-300">Inicio</a>
-    <a href="/quienes-somos" class="block text-white hover:text-gray-300"
-      >Quienes Somos</a
-    >
-    <a href="/productos" class="block text-white hover:text-gray-300"
-      >Productos</a
-    >
-    <a href="/norma" class="block text-white hover:text-gray-300"
-      >Norma NIMF15</a
-    >
-    <a href="/contacto" class="block text-white hover:text-gray-300">Contacto</a
-    >
-  </div>
-</div>
-
+<!-- Script para manejar el menú móvil -->
 <script>
-  const menuBtn = document.getElementById("menu-btn");
+  const menuButton = document.getElementById("menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
 
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener("click", () => {
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
   }
 </script>
-
-<style>
-  .nav-link {
-    position: relative;
-    color: white;
-    font-weight: 600;
-    padding: 8px;
-    text-decoration: none;
-  }
-
-  .nav-link::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    background: white;
-    transition: width 0.3s;
-    bottom: 0;
-    left: 0;
-  }
-
-  .nav-link:hover::after {
-    width: 100%;
-  }
-</style>
