@@ -82,14 +82,16 @@
 
 <!-- Script para manejar el menú móvil (Opcional) -->
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.getElementById("menu-button") as Element;
-    const mobileMenu = document.getElementById("mobile-menu") as Element;
+  function initializeMenu() {
+    const menuButton = document.getElementById("menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
 
     if (menuButton && mobileMenu) {
       menuButton.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
       });
     }
-  });
+  }
+
+  document.addEventListener("DOMContentLoaded", initializeMenu);
 </script>
