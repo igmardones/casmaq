@@ -1,0 +1,95 @@
+<!-- Formulario de Contacto -->
+<div class="bg-gray-200 p-8 rounded-lg shadow-lg">
+  <h2 class="text-3xl font-bold text-teal-800">Contáctanos</h2>
+  <p class="mt-8 text-pretty mb-2 text-teal-950">
+    Si tienes alguna consulta, quieres cotizar o simplemente saber más de
+    nuestros productos, no dudes en escribirnos.
+  </p>
+  <form
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    class="space-y-6"
+    onsubmit="submitForm(event)"
+  >
+    <!-- Campo de clave de acceso de Web3Forms -->
+    <input
+      type="hidden"
+      name="access_key"
+      value="63f47b32-a27f-4719-a5ce-f1e65e914b2f"
+    />
+
+    <!-- Campo Nombre -->
+    <div>
+      <label for="nombre" class="block text-md font-medium text-teal-900"
+        >Nombre</label
+      >
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        required
+        class="mt-2 w-full p-3 border border-teal-700 bg-teal-50 rounded-md shadow-sm focus:ring-2 focus:ring-teal-600 focus:border-transparent text-black"
+        placeholder="Nombre"
+      />
+    </div>
+
+    <!-- Campo Correo Electrónico -->
+    <div>
+      <label for="email" class="block text-md font-medium text-teal-900"
+        >Correo Electrónico</label
+      >
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        class="mt-2 w-full p-3 border border-teal-700 bg-teal-50 rounded-md shadow-sm focus:ring-2 focus:ring-teal-600 focus:border-transparent text-black"
+        placeholder="Correo electrónico"
+      />
+    </div>
+
+    <!-- Campo Nombre Empresa -->
+    <div>
+      <label for="empresa" class="block text-md font-medium text-teal-900"
+        >Nombre Empresa</label
+      >
+      <input
+        type="text"
+        id="empresa"
+        name="empresa"
+        required
+        class="mt-2 w-full p-3 border border-teal-700 bg-teal-50 rounded-md shadow-sm focus:ring-2 focus:ring-teal-600 focus:border-transparent text-black"
+        placeholder="Empresa"
+      />
+    </div>
+
+    <!-- Campo Mensaje -->
+    <div>
+      <label for="mensaje" class="block text-md font-medium text-teal-900"
+        >Mensaje</label
+      >
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        required
+        rows="4"
+        class="mt-2 w-full p-3 border border-teal-700 bg-teal-50 rounded-md shadow-sm focus:ring-2 focus:ring-teal-600 focus:border-transparent text-black"
+        placeholder="Escribe tu mensaje..."></textarea>
+    </div>
+
+    <!-- Botón de Envío -->
+    <div>
+      <button
+        type="submit"
+        class="w-full py-3 px-4 bg-teal-900 text-white font-medium rounded-md shadow hover:bg-teal-800 transition-colors"
+      >
+        Enviar mensaje
+      </button>
+    </div>
+  </form>
+
+  <!-- Mensajes de respuesta -->
+  <div id="formMessage" class="hidden mt-4 text-center"></div>
+</div>
+
+<script src="/ts/submitForm.js" is:inline></script>

@@ -1,9 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import Facebook from "../components/icons/Facebook.astro";
-import Linkedin from "../components/icons/Linkedin.astro";
-import Instagram from "../components/icons/Instagram.astro";
+import FormContact from "../components/FormContact.astro";
+import SocialNetworks from "../components/SocialNetworks.astro";
 ---
 
 <Layout title="Casmaq">
@@ -16,131 +15,9 @@ import Instagram from "../components/icons/Instagram.astro";
             <div
               class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8"
             >
-              <!-- Formulario de Contacto -->
-              <div class="bg-gray-200 p-8 rounded-lg shadow-lg">
-                <h2 class="text-3xl font-bold text-teal-800">Contactanos</h2>
-                <p class="mt-8 text-pretty mb-2 text-teal-950">
-                  Si tienes alguna consulta, quieres cotizar o simplemente saber
-                  más de nuestros productos, no dudes en escribirnos.
-                </p>
-                <form
-                  action="https://formspree.io/f/{your-endpoint}"
-                  method="POST"
-                  class="space-y-6"
-                >
-                  <!-- Campo Nombre -->
-                  <div>
-                    <label
-                      for="name"
-                      class="block text-md font-medium text-teal-900"
-                      >Nombre</label
-                    >
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      class="mt-2 w-full p-3 border border-teal-700 bg-teal-50 rounded-md shadow-sm focus:ring-2 focus:ring-teal-600 focus:border-transparent"
-                      placeholder="Escribe tu nombre"
-                    />
-                  </div>
+              <FormContact />
 
-                  <!-- Campo Correo Electrónico -->
-                  <div>
-                    <label
-                      for="email"
-                      class="block text-md font-medium text-teal-900"
-                      >Correo Electrónico</label
-                    >
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      class="mt-2 w-full p-3 border border-teal-700 bg-teal-50 rounded-md shadow-sm focus:ring-2 focus:ring-teal-600 focus:border-transparent"
-                      placeholder="Escribe tu correo electrónico"
-                    />
-                  </div>
-
-                  <!-- Campo Nombre Empresa -->
-                  <div>
-                    <label
-                      for="name"
-                      class="block text-md font-medium text-teal-900"
-                      >Nombre Empresa</label
-                    >
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      class="mt-2 w-full p-3 border border-teal-700 bg-teal-50 rounded-md shadow-sm focus:ring-2 focus:ring-teal-600 focus:border-transparent"
-                      placeholder="Escribe el nombre de tu empresa"
-                    />
-                  </div>
-
-                  <!-- Campo Mensaje -->
-                  <div>
-                    <label
-                      for="message"
-                      class="block text-md font-medium text-teal-900"
-                      >Mensaje</label
-                    >
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows="4"
-                      class="mt-2 w-full p-3 border border-teal-700 bg-teal-50 rounded-md shadow-sm focus:ring-2 focus:ring-teal-600 focus:border-transparent"
-                      placeholder="Escribe tu mensaje..."></textarea>
-                  </div>
-
-                  <!-- Botón de Envío -->
-                  <div>
-                    <button
-                      type="submit"
-                      class="w-full py-3 px-4 bg-teal-900 text-white font-medium rounded-md shadow hover:bg-teal-800 transition-colors"
-                    >
-                      Enviar mensaje
-                    </button>
-                  </div>
-                </form>
-              </div>
-
-              <!-- Sección de Redes Sociales -->
-              <div class="flex flex-col justify-center items-center space-y-8">
-                <!-- Instagram -->
-                <a
-                  href="https://www.instagram.com/casmaq_spa/"
-                  target="_blank"
-                  class="flex items-center space-x-4 bg-teal-800 text-white px-6 py-4 rounded-lg shadow-lg hover:bg-teal-600 transition-colors w-full justify-center"
-                >
-                  <Instagram />
-                  <span class="text-lg font-medium">Síguenos en Instagram</span>
-                </a>
-
-                <!-- LinkedIn -->
-                <a
-                  href="https://www.linkedin.com/company/casmaq-spa"
-                  target="_blank"
-                  class="flex items-center space-x-4 bg-teal-800 text-white px-6 py-4 rounded-lg shadow-lg hover:bg-teal-600 transition-colors w-full justify-center"
-                >
-                  <Linkedin />
-                  <span class="text-lg font-medium">Conéctate en LinkedIn</span>
-
-                  <!-- Facebook -->
-                  <a
-                    href="https://www.facebook.com/tuempresa"
-                    target="_blank"
-                    class="flex items-center space-x-4 bg-teal-800 text-white px-6 py-4 rounded-lg shadow-lg hover:bg-teal-600 transition-colors w-full justify-center"
-                  >
-                    <Facebook />
-                    <span class="text-lg font-medium"
-                      >Visítanos en Facebook</span
-                    >
-                  </a>
-                </a>
-              </div>
+              <SocialNetworks />
             </div>
           </section>
         </div>
